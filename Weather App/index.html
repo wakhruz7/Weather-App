@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1>🌤️ Weather App</h1>
+      <p class="subtitle">Istalgan shahar ob-havosini bil</p>
+    </header>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Shahar nomini kiriting... (masalan: Tashkent)" />
+      <button id="search-btn">Qidirish</button>
+    </div>
+
+    <!-- Error -->
+    <div class="error" id="error">Shahar topilmadi. Qaytadan urinib ko'ring!</div>
+
+    <!-- Weather Card -->
+    <div class="weather-card" id="weather-card">
+      <div class="city-name" id="city-name">—</div>
+      <div class="country" id="country">—</div>
+      <div class="weather-icon" id="weather-icon">🌤️</div>
+      <div class="temperature" id="temperature">—°C</div>
+      <div class="description" id="description">—</div>
+
+      <div class="details">
+        <div class="detail-item">
+          <span class="detail-icon">💧</span>
+          <span class="detail-label">Namlik</span>
+          <span class="detail-value" id="humidity">—</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">🌬️</span>
+          <span class="detail-label">Shamol</span>
+          <span class="detail-value" id="wind">—</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">👁️</span>
+          <span class="detail-label">Ko'rinish</span>
+          <span class="detail-value" id="visibility">—</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">🌡️</span>
+          <span class="detail-label">His qilinadi</span>
+          <span class="detail-value" id="feels-like">—</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Yuklanmoqda...</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
